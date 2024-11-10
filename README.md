@@ -5,4 +5,4 @@ Consiste en una partida de pin pon, en la que el proceso padre iniciará dos pro
 - Un jugador puede devolver una bola si se recibe a una distancia de 3 o menos respecto a su posición actual. En caso contrario, no puede tocarla y encaja un punto.
 - Al tocar la bola para devolverla, el jugador decide a que posición del intervalo [0,9] la envía. Tras devolver la bola, también podrá moverse si lo desea hasta 2 posiciones desde la suya actual. La máquina lo decide aleatoriamente, mientras que el jugador se lo pregunta al usuario.
 
-Para compartir información entre procesos se utiliza un archivo compartido de tipo binario y la partida la gana el primero en llegar a 10 puntos.
+Para compartir información entre procesos se utiliza un archivo compartido de tipo binario y la partida la gana el primero en llegar a 10 puntos. Los tres procesos sincronizan sus acciones exclusivamente con el uso de señales.
